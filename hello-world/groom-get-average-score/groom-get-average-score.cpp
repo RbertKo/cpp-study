@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <cstdio>
 #include <math.h>
 
 using namespace std;
@@ -14,7 +15,7 @@ int main() {
 	cin >> math;
 	cin >> english;
 
-	avr = roundf(((korean + math + english) / 3.0) * 100) / 100;
+	avr = roundf((korean + math + english) / 3.0 * 100) / 100;
 
 	if (avr >= 90.0) {
 		grade = 'A';
@@ -29,7 +30,7 @@ int main() {
 		grade = 'D';
 	}
 
-	cout << avr << ' ' << grade << endl;
+	printf("%.2f %c", avr, grade);
 	return 0;
 }
 
