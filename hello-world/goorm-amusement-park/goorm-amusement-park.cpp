@@ -1,11 +1,86 @@
 ﻿// goorm-amusement-park.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
-#include <iostream>
+#include<cstdio>
+#include<cstdlib>
+#include<memory.h>
+#include<iostream>
+#include<algorithm>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+
+using namespace std;
+
+
+int get_minimum_trashes(int** waste, int N, int K) {
+	int answer = -1;
+	int x = 0, y = 0;
+
+	while (!(x == (N - K + 1) && y == (N - K))) {
+		if (x >= (N - K + 1)) {
+			y += 1;
+			x = 0;
+		}
+
+		int i = x, z = y;
+		int current = 0;
+
+		while (1) {
+			// cout << waste[z][i] << ' ';
+
+			current += waste[z][i];
+
+			if (i == (x + K - 1) && z == (y + K - 1) || (answer != -1 && current > answer)) {
+				// cout << endl << endl;
+				break;
+			}
+
+			if (i == (x + K - 1)) {
+				z += 1;
+				i = x;
+				// cout << endl;
+				continue;
+			}
+
+			i += 1;
+		}
+
+		answer = answer == -1 || answer > current ? current : answer;
+
+		x += 1;
+	}
+
+	return answer;
+}
+
+void test_case(int caseIndex) {
+	int N, K;
+	scanf_s("%d %d", &N, &K);
+
+	int** wastes = new int* [N];
+	for (int r = 0; r < N; r += 1) {
+		wastes[r] = new int[N];
+		for (int c = 0; c < N; c += 1) {
+			scanf_s("%d", &wastes[r][c]);
+		}
+	}
+
+	int answer = get_minimum_trashes(wastes, N, K);
+	printf("%d\n", answer);
+
+	for (int r = 0; r < N; r += 1) {
+		delete[] wastes[r];
+	}
+	delete[] wastes;
+}
+
+int main() {
+	int caseSize;
+	cin >> caseSize;
+
+	for (int caseIndex = 0; caseIndex < caseSize; caseIndex += 1) {
+		test_case(caseIndex);
+	}
+	return 0;
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
