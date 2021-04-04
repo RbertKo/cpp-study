@@ -1,11 +1,75 @@
 ﻿// goorm-triangle-slug.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
+#include <string>
+#include <vector>
 #include <iostream>
+
+using namespace std;
+
+vector<int> solution(int n) {
+    vector<int> answer;
+    const int DOWN = 0, RIGHT = 1, UP = 2;
+    int x = 0, y = 0, count = 1, depth = 1, end = 0;
+    int** result = new int* [n];
+    int now = DOWN;
+
+    for (int i = n; i > 0; i--) {
+        end += i;
+        result[i - 1] = new int[i];
+    }
+
+    while (count <= end) {
+        result[y][x] = count++;
+
+        switch (now) {
+        case DOWN:
+            ++y;
+
+            if (y == n - depth) {
+                now = RIGHT;
+            }
+
+            break;
+
+        case RIGHT:
+            ++x;
+
+            if (x == n - (2 * depth - 1)) {
+                now = UP;
+            }
+
+            break;
+
+        case UP:
+            --x;
+            --y;
+
+            if (x == depth && y == 2 * depth - 1) {
+                ++depth;
+                now = DOWN;
+            }
+
+            break;
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j <= i; j++) {
+            answer.push_back(result[i][j]);
+        }
+    }
+
+    return answer;
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int input;
+
+    cin >> input;
+
+    solution(input);
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴

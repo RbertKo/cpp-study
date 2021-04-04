@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "groom-get-average-score", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goorm-amusement-park", "goorm-amusement-park\goorm-amusement-park.vcxproj", "{36DD457E-32DF-413E-87AD-6671154CBAFE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goorm-triangle-slug", "goorm-triangle-slug\goorm-triangle-slug.vcxproj", "{B2AA7952-9838-41DA-9B6D-6096B97BEB83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{36DD457E-32DF-413E-87AD-6671154CBAFE}.Release|x64.Build.0 = Release|x64
 		{36DD457E-32DF-413E-87AD-6671154CBAFE}.Release|x86.ActiveCfg = Release|Win32
 		{36DD457E-32DF-413E-87AD-6671154CBAFE}.Release|x86.Build.0 = Release|Win32
+		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Debug|x64.ActiveCfg = Debug|x64
+		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Debug|x64.Build.0 = Debug|x64
+		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Debug|x86.ActiveCfg = Debug|Win32
+		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Debug|x86.Build.0 = Debug|Win32
+		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Release|x64.ActiveCfg = Release|x64
+		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Release|x64.Build.0 = Release|x64
+		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Release|x86.ActiveCfg = Release|Win32
+		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
