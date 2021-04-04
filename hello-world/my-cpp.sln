@@ -19,6 +19,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goorm-amusement-park", "goo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goorm-triangle-slug", "goorm-triangle-slug\goorm-triangle-slug.vcxproj", "{B2AA7952-9838-41DA-9B6D-6096B97BEB83}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goorm-frog-2", "goorm-frog-2\goorm-frog-2.vcxproj", "{6A144758-0EC6-4BBB-A30E-796590D4F6FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goorm-sum-of-two-dementional-intervals", "goorm-sum-of-two-dementional-intervals\goorm-sum-of-two-dementional-intervals.vcxproj", "{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +95,22 @@ Global
 		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Release|x64.Build.0 = Release|x64
 		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Release|x86.ActiveCfg = Release|Win32
 		{B2AA7952-9838-41DA-9B6D-6096B97BEB83}.Release|x86.Build.0 = Release|Win32
+		{6A144758-0EC6-4BBB-A30E-796590D4F6FC}.Debug|x64.ActiveCfg = Debug|x64
+		{6A144758-0EC6-4BBB-A30E-796590D4F6FC}.Debug|x64.Build.0 = Debug|x64
+		{6A144758-0EC6-4BBB-A30E-796590D4F6FC}.Debug|x86.ActiveCfg = Debug|Win32
+		{6A144758-0EC6-4BBB-A30E-796590D4F6FC}.Debug|x86.Build.0 = Debug|Win32
+		{6A144758-0EC6-4BBB-A30E-796590D4F6FC}.Release|x64.ActiveCfg = Release|x64
+		{6A144758-0EC6-4BBB-A30E-796590D4F6FC}.Release|x64.Build.0 = Release|x64
+		{6A144758-0EC6-4BBB-A30E-796590D4F6FC}.Release|x86.ActiveCfg = Release|Win32
+		{6A144758-0EC6-4BBB-A30E-796590D4F6FC}.Release|x86.Build.0 = Release|Win32
+		{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}.Debug|x64.ActiveCfg = Debug|x64
+		{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}.Debug|x64.Build.0 = Debug|x64
+		{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}.Debug|x86.ActiveCfg = Debug|Win32
+		{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}.Debug|x86.Build.0 = Debug|Win32
+		{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}.Release|x64.ActiveCfg = Release|x64
+		{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}.Release|x64.Build.0 = Release|x64
+		{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}.Release|x86.ActiveCfg = Release|Win32
+		{BBEFACB9-9064-43E9-8F1F-24EA06AE9E70}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
