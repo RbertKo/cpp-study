@@ -63,12 +63,6 @@ int main()
 		vt.push_back(target[i]);
 	}
 
-	for(int i = 0; i < vt.size(); i++) {
-		cout << vt[i];
-	}
-
-	cout << endl;
-
 	for (int i = 0; i < vt.size() - k; i++) {
 		cout << vt[i];
 	}
