@@ -1,0 +1,4 @@
+﻿  baekjoon-2812.cpp
+C:\Users\myeon\Desktop\Study\cpp-study\hello-world\baekjoon-2812\baekjoon-2812.cpp(66,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\myeon\Desktop\Study\cpp-study\hello-world\baekjoon-2812\baekjoon-2812.cpp(72,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  baekjoon-2812.vcxproj -> C:\Users\myeon\Desktop\Study\cpp-study\hello-world\Debug\baekjoon-2812.exe
