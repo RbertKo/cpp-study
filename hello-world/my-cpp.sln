@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goorm-sum-of-two-dementiona
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "baekjoon-2812", "baekjoon-2812\baekjoon-2812.vcxproj", "{0498B53A-B6B4-4713-8346-61266E0FFCAB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "baekjoon-14889", "baekjoon-14889\baekjoon-14889.vcxproj", "{415A1E20-2E5E-417C-8270-9D32D9E49BF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{0498B53A-B6B4-4713-8346-61266E0FFCAB}.Release|x64.Build.0 = Release|x64
 		{0498B53A-B6B4-4713-8346-61266E0FFCAB}.Release|x86.ActiveCfg = Release|Win32
 		{0498B53A-B6B4-4713-8346-61266E0FFCAB}.Release|x86.Build.0 = Release|Win32
+		{415A1E20-2E5E-417C-8270-9D32D9E49BF4}.Debug|x64.ActiveCfg = Debug|x64
+		{415A1E20-2E5E-417C-8270-9D32D9E49BF4}.Debug|x64.Build.0 = Debug|x64
+		{415A1E20-2E5E-417C-8270-9D32D9E49BF4}.Debug|x86.ActiveCfg = Debug|Win32
+		{415A1E20-2E5E-417C-8270-9D32D9E49BF4}.Debug|x86.Build.0 = Debug|Win32
+		{415A1E20-2E5E-417C-8270-9D32D9E49BF4}.Release|x64.ActiveCfg = Release|x64
+		{415A1E20-2E5E-417C-8270-9D32D9E49BF4}.Release|x64.Build.0 = Release|x64
+		{415A1E20-2E5E-417C-8270-9D32D9E49BF4}.Release|x86.ActiveCfg = Release|Win32
+		{415A1E20-2E5E-417C-8270-9D32D9E49BF4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
