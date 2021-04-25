@@ -1,20 +1,62 @@
 ﻿// programmers-chuseok-traffic.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
+#include <string>
+#include <vector>
 #include <iostream>
+
+using namespace std;
+
+int solution(vector<string> lines) {
+    int size = lines.size();
+    int* end_times = new int[size];
+    int* begin_times = new int[size];
+    int answer = 0;
+
+    for (int i = 0; i < size; i++) {
+        string line = lines[i];
+        string h = line.substr(11, 2);
+        string m = line.substr(14, 2);
+        string s = line.substr(17, 2);
+        string ms = line.substr(20, 3);
+        string during_s = line.substr(24, 5); // 3.000
+
+        int h_ms = stoi(h) * 60 * 60 * 1000;
+        int m_ms = stoi(m) * 60 * 1000;
+        int s_ms = stoi(s) * 1000 + stoi(ms);
+
+        int during_ms = stof(during_s) * 1000;
+
+        int total_ms = h_ms + m_ms + s_ms;
+
+        begin_times[i] = total_ms - during_ms + 1;
+        end_times[i] = total_ms;
+    }
+
+    for (int i = 0; i < size; i++) {
+        int count = 0;
+        int end_time = end_times[i] + 1000;
+
+        if (answer > size - i) {
+            break;
+        }
+
+        for (int j = i; j < size; j++) {
+            if (end_time > begin_times[j]) {
+                count++;
+            }
+        }
+
+        answer = max(answer, count);
+    }
+
+    delete[] end_times;
+    delete[] begin_times;
+
+    return answer;
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Hello World!\n";
 }
-
-// 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
-// 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
-
-// 시작을 위한 팁: 
-//   1. [솔루션 탐색기] 창을 사용하여 파일을 추가/관리합니다.
-//   2. [팀 탐색기] 창을 사용하여 소스 제어에 연결합니다.
-//   3. [출력] 창을 사용하여 빌드 출력 및 기타 메시지를 확인합니다.
-//   4. [오류 목록] 창을 사용하여 오류를 봅니다.
-//   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
-//   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.
